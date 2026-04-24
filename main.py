@@ -120,7 +120,7 @@ async def get_promo(update: Update, context: ContextTypes.DEFAULT_TYPE):
         if response == "success":
             # Здесь можно сохранить данные или продолжить регистрацию
             await update.message.reply_text(
-                f"✅ Регистрация завершена!\nФИО: {context.user_data['fio']}\nТелефон: {context.user_data['phone']}\nEmail: {context.user_data['email']} сохранены, спасибо! \n🌟Твоя ссылка на канал: https://t.me/+M8sU30_GtXsxNGQy🌟 \n 📚Методичку найдешь там в закрепе!📚 \nОчень рады тебе!")
+                f"✅ Регистрация завершена!\nФИО: {context.user_data['fio']}\nТелефон: {context.user_data['phone']}\nEmail: {context.user_data['email']} сохранены, спасибо! \n🌟Твоя ссылка на канал: https://t.me/+kIz5X1BdFXo2N2Zi🌟 \n 📚Методичку найдешь там в закрепе!📚 \nОчень рады тебе!")
 
         else:
             logger.info(response)
