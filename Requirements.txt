@@ -1,3 +1,4 @@
-RUN pip install python-dotenv
-RUN pip install python-telegram-bot
-RUN pip install sqlalchemy
+python-telegram-bot
+sqlalchemy
+python-dotenv
+aiosqlite
