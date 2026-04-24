@@ -22,13 +22,13 @@ EMAIL, PHONE, FIO, CONFIRM, PROMO = range(5)
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.effective_user.name in MODERATIONS:
         logger.info(f"Модератор {update.effective_user.name} запустил команду /start")
-        await update.message.reply_text('Вы вошли под аккаунтом модератора, вам доступны функции админа: /create_promo' https://disk.yandex.ru/d/_6MRriJo4iQekA)
+        await update.message.reply_text('Вы вошли под аккаунтом модератора, вам доступны функции админа: /create_promo https://disk.yandex.ru/d/_6MRriJo4iQekA')
     elif update.effective_user.name is None:
         await update.message.reply_text('Для пользования этим ботом нужно сделать свой tg-id видимым!')
     else:
         logger.info(f"Пользователь {update.effective_user.name} запустил команду /start")
         await update.message.reply_text(
-            'Йоу! Это telegram-бот Prosecco Show, твой проводник в мир импрова.\nСпасибо за то, что проявил интерес к команде и решил присоединиться к нашему сообществу.\nСпециально для тебя мы подготовили два подарка - 📚методичку импровизатора📚 и целый месяц бесплатной подписки на наш 🌟закрытый канал🌟!\nЧтобы забрать оба подарка мы предлагаем познакомиться, для этого пройди регистрацию, ответив всего на пару вопросов.\nДля начала регистрации используй команду /register'\nНаша политика использования персональных данных: https://disk.yandex.ru/d/_6MRriJo4iQekA)
+            'Йоу! Это telegram-бот Prosecco Show, твой проводник в мир импрова.\nСпасибо за то, что проявил интерес к команде и решил присоединиться к нашему сообществу.\nСпециально для тебя мы подготовили два подарка - 📚методичку импровизатора📚 и целый месяц бесплатной подписки на наш 🌟закрытый канал🌟!\nЧтобы забрать оба подарка мы предлагаем познакомиться, для этого пройди регистрацию, ответив всего на пару вопросов.\nДля начала регистрации используй команду /register \nНаша политика использования персональных данных: https://disk.yandex.ru/d/_6MRriJo4iQekA')
 
 
 async def helpper(update: Update, context: ContextTypes.DEFAULT_TYPE):
